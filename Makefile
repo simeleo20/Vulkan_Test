@@ -1,6 +1,6 @@
 include .env
 
-CFLAGS = -std=c++17 -O2 -I "E:/Visual Studio/Visual Studio/Libraries/glfw-3.4.bin.WIN64/include" -I "c:/VulkanSDK/1.3.296.0/Include" -I "E:/Visual Studio/Visual Studio/Libraries/glm"
+CFLAGS = -std=c++17 -O2 -I "E:/Visual Studio/Visual Studio/Libraries/glfw-3.4.bin.WIN64/include" -I "c:/VulkanSDK/1.3.296.0/Include" -I "E:/Visual Studio/Visual Studio/Libraries/glm" -I$(TINYOBJ_PATH)
 LDFLAGS = -L"E:/Visual Studio/Visual Studio/Libraries/glfw-3.4.bin.WIN64/lib-mingw-w64" -L $(VULKAN_SDK) -lglfw3 -lvulkan-1 -lgdi32
 
 # create list of all spv files and set as dependency
